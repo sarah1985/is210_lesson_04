@@ -14,16 +14,16 @@ ACC_CRISPIAN = 0
 for i in SHAKESPEARE_LINES:
 
     NUM_WORDS = len(i.split())
-    
+
     if NUM_WORDS > ACC_MAX:
         ACC_MAX = NUM_WORDS
-        
+
     if NUM_WORDS < ACC_MIN:
         ACC_MIN = NUM_WORDS
-        
+
     if 'Crispian' in i:
         ACC_CRISPIAN = ACC_CRISPIAN + 1
-        
+
     ACC_TOTAL = ACC_TOTAL + NUM_WORDS
 
 print "ACC_MAX: %s" % ACC_MAX
@@ -35,4 +35,3 @@ MINIMUM_WORDS = ACC_MIN
 NUM_CRISPIAN = ACC_CRISPIAN
 AVERAGE_WORDS = float(ACC_TOTAL)/len(SHAKESPEARE_LINES)
 print AVERAGE_WORDS
-
