@@ -8,7 +8,8 @@ PASSWORD = 'None'
 ATTEMPTS = 3
 
 while not ACCESS:
-    PASSWORD = raw_input('What is your password ({} attempts left.)?'.format(ATTEMPTS))
+    PASSWORD = raw_input('What is your password ({} attempts '
+                         'left.)?'.format(ATTEMPTS))
     ATTEMPTS = ATTEMPTS - 1
 
     if PASSWORD == data.PASSWORD and ATTEMPTS > 0:
